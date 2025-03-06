@@ -23,7 +23,8 @@
 } */
 a {
   font-weight: 500;
-  color: #646cff;
+  /* color: #646cff; */
+  color: #020a95;
   text-decoration: inherit;
 }
 a:hover {
@@ -44,21 +45,24 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: aqua;
-  padding: 0 16px;
+  /* padding: 0 16px; */
 }
-
+.container-box
+{
+  background-color: #f8f4f4;
+}
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  /* font-size: 3.2em;
+  line-height: 1.1; */
   display: flex;
   justify-content: center;
 }
-header {
+/* header {
   background-color: #f5ba13;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-}
+} */
 
 header h1 {
   color: #fff;
@@ -88,7 +92,7 @@ nav li {
   margin: 0 10px;
 }
 
-nav a {
+nav a-box {
   text-decoration: none;
   color: #333;
   padding: 4px;
@@ -118,7 +122,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   color: #6d848c;
-  width: 95%;
+  /* width: 95%; */
   font-size: 18px;
   appearance: none;
   outline: 0;
@@ -126,29 +130,7 @@ button {
 button:hover {
   border-color: #646cff;
 }
-input {
 
-  /* background-color: rgba(252, 252, 252, 0.2);
-  border-radius: 3px;
-  padding: 0.8rem; 
-  color: white;
-  margin: 5px;
-  border: none; 
-  */
-  border: 1px solid rgba(252, 252, 252, 0.4);
-  border-radius: 1rem;
-  background-color:#f7f5f3;
-  width: 250px;
-  height: 40px;
-  font-family: "Source Sans Pro", sans-serif;
-  padding: 10px 15px;
-  margin: 0 auto 10px auto;
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  color:black ;
-  font-weight: 300;
-}
 .navbar
 {
   display: flex;
@@ -189,17 +171,39 @@ color: white;
 background-color: blue;
 box-shadow: #888;
 }
+input.textStyle {
 
+  /* background-color: rgba(252, 252, 252, 0.2);
+  border-radius: 3px;
+  padding: 0.8rem; 
+  color: white;
+  margin: 5px;
+  border: none; 
+  */
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  border-radius: 1rem;
+  background-color:#f7f5f3;
+  width: 250px;
+  height: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color:black ;
+  font-weight: 300;
+}
 /* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
-.toDoHeader
+.header-style
 {
   background-color: #c0c072;
   border-radius: 2rem;
-  width: 50%;
-  margin: auto;
+  /* width: 50%; */
+  /* margin: auto; */
 }
 ul.todoList
 {

@@ -1,4 +1,6 @@
 import React,{useState} from "react"
+import CardHeader from "../CardHeader/CardHeader";
+import { useNavigate } from "react-router-dom";
 
 function Register()
 {
@@ -8,6 +10,11 @@ function Register()
         lName:"",
         email:""
     })
+    const navigate=useNavigate();
+    function onSubmit()
+    {
+      navigate('/login')
+    }
     function OnRegister(event)
     {
         ///***1. method of Values destruction***/
@@ -54,23 +61,25 @@ function Register()
     return(
     <>
         <div className='container'> 
-        <h1>Register</h1>
+        <CardHeader headerText="Register" />
         {/* <!-- Get the current values from Hooks state fullUserInfo variable--> */}
         <h6>{fullUserInfo.fName} {fullUserInfo.lName}</h6>
         <h6>{fullUserInfo.email}</h6>
-            <form>
+            <form onSubmit={onSubmit}>
                 <br/>
-                <input className='login-input' onChange={OnRegister} type="text" name="fName" 
+                <input className='login-input textStyle' required onChange={OnRegister} type="text" name="fName" 
                 value={fullUserInfo.fName} 
                 id="fName" placeholder="First Name" />
-                <input className='login-input' onChange={OnRegister} type="text" name="lName" 
+                <input className='login-input textStyle' required onChange={OnRegister} type="text" name="lName" 
                 value={fullUserInfo.lName} 
                 id="lName" placeholder="Last Name" />
-                <input className='login-input' onChange={OnRegister} type="text" name="email" 
+                <input className='login-input textStyle' required onChange={OnRegister} type="text" name="email" 
                 value={fullUserInfo.email} 
                 id="email" placeholder="Email Address" />
+                <a href='/login' >Login?</a>
                 <br/>
-                <button className='btn-Submit' type="button" >Register</button>
+                <br/>
+                <button className='btn-Submit' type="submit"  >Register</button>
 
             </form> 
         </div>

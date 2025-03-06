@@ -5,8 +5,8 @@ export default function Home()
 {
 return(
     <>
-    <div > 
-            <h1 >Home</h1>
+    <div className='container'style={ {marginTop: "100px" } } > 
+            <h1 >Management Portal</h1>
     </div>
     </>
 );

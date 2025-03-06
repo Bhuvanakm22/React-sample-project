@@ -1,10 +1,15 @@
 import React,{useState} from "react"
-
+import CardHeader from "../CardHeader/CardHeader";
+import { useNavigate } from "react-router-dom";
 function ToDoList()
 {
     const [inputText,setInputText]=useState("");
     const [arrList,setArrVal]=useState([]);
-
+    const navigate=useNavigate();
+    function onSubmit()
+    {
+      navigate('/login')
+    }
     function handleChange(event)
     {
     const vals=event.target.value;
@@ -21,14 +26,16 @@ function ToDoList()
 return(
 <>
 <div className='container'> 
-        <p className="toDoHeader">To-Do List</p>
+         <CardHeader headerText="To-Do List" />
             <form>
-                <br/>
-            </form>
-            <input  type="text" name="Item" onChange={handleChange} value={inputText} id="Item" placeholder="Item" />
-            <button className='btn-Submit' onClick={onAdd} type="button" >Add</button>
 
+            
+            <input className='textStyle' type="text" name="Item" onChange={handleChange} value={inputText} id="Item" placeholder="Add item to be listed" />
+            <button className='btn-Submit' onClick={onAdd} type="button" >Add</button>
+            </form>
+            <br/>
             <ul className="todoList">
+            <a href='/taskList' ><li>React Learning</li></a>
                 {
                 arrList.map((val)=>(<li key={val}>{val}</li>) )
                 }

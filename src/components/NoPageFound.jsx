@@ -1,6 +1,6 @@
 import React from "react"
 
-function NoPage()
+function NoPageFound()
 {
 return(
     <>
@@ -11,4 +11,4 @@ return(
 );
 }
 
-export default NoPage;
+export default NoPageFound;
