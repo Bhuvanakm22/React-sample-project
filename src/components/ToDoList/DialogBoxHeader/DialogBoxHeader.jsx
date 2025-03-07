@@ -1,8 +1,8 @@
 import { MdPostAdd, MdMessage } from 'react-icons/md';
 
-import classes from './MainHeader.module.css';
+import classes from './DialogBoxHeader.module.css';
 
-function MainHeader({ onCreatePost }) {
+function DialogBoxHeader({ onCreatePost }) {
   return (
     <header className={classes.header}>
       <h1 className={classes.logo}>
@@ -19,4 +19,4 @@ function MainHeader({ onCreatePost }) {
   );
 }
 
-export default MainHeader;
+export default DialogBoxHeader;

@@ -17,7 +17,7 @@ function NewPost_old(props)
     {
         const postData={
             author:authorVal,
-            bodyText:textVal
+            body:textVal
         };
 
         console.log(postData);

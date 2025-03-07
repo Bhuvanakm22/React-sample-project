@@ -22,7 +22,10 @@
     color: #593884;
     font-style: italic;
   }
-  
+  /* a{
+    text-decoration: none;
+  } */
+
   @keyframes animate-in {
     from {
       opacity: 0;
