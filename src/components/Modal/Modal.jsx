@@ -1,17 +1,23 @@
 import React,{useState} from "react"
 import classes from './Modal.module.css'
+import { useNavigate } from "react-router-dom";
 
 //It gets child component as an object
-function DialogBoxModal({ children,onClose})
+function Modal({ children})
 {
 
+    const navigate=useNavigate();
+    function closeHandler()
+    {
+        navigate('..');
+    }
     return(
         <>
-        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-<div className={classes.backdrop} onClick={onClose} />
+       
+<div className={classes.backdrop} onKeyDown={closeHandler} onClick={closeHandler} />
         <dialog open className={classes.modal} >
             {children}</dialog>
         </>
     );
 }
-export default DialogBoxModal;
+export default Modal;

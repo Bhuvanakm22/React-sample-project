@@ -4,7 +4,7 @@ import Post from "../Task/Task"
 import classes from './TaskList.module.css'
 import CardHeader from "../../CardHeader/CardHeader";
 import DialogBoxModal from "../DialogBoxModal/DialogBoxModal"
-import MainHeader from "../DialogBoxHeader/MainHeader";
+import MainHeader from "../DialogBoxHeader/DialogBoxHeader";
 
 
 
