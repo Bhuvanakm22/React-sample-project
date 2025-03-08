@@ -45,6 +45,6 @@ export async function action({request}){
     if(response.status===201)
     {
     //"redirect" actually redirects to the parent component like "navigate"
-      return redirect('/');
+      return redirect('..');
     }
 }

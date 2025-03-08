@@ -1,9 +1,13 @@
 import React from 'react'
 import PostsList from '../components/Posts/PostsList';
 import { Outlet } from 'react-router-dom';
+import MainHeader from '../components/MainHeader/MainHeader';
 function Posts() {
 return( 
   <>
+          <MainHeader /> 
+          <Outlet /> {/* {/*To show child component(here pop-up dialog) in the same DOM 
+                          placeholder to show root folder*/}
   <Outlet />
     <main>
       <PostsList />

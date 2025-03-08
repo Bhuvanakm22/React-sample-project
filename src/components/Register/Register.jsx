@@ -1,6 +1,7 @@
 import React,{useState} from "react"
 import CardHeader from "../CardHeader/CardHeader";
 import { useNavigate } from "react-router-dom";
+import Login from "../Login/Login";
 
 function Register()
 {
@@ -61,6 +62,7 @@ function Register()
     return(
     <>
         <div className='container'> 
+            <p style={{color: "red" }} >***No backend connection for this!!!***</p>
         <CardHeader headerText="Register" />
         {/* <!-- Get the current values from Hooks state fullUserInfo variable--> */}
         <h6>{fullUserInfo.fName} {fullUserInfo.lName}</h6>
@@ -76,6 +78,8 @@ function Register()
                 <input className='login-input textStyle' required onChange={OnRegister} type="text" name="email" 
                 value={fullUserInfo.email} 
                 id="email" placeholder="Email Address" />
+                      <input className='login-input textStyle' required type='text' placeholder='User name' id="sName" name="sName"  />
+                      <input className='login-input textStyle' required type="password" placeholder='Password' id="sPassword" name="sPassword"  />
                 <a href='/login' >Login?</a>
                 <br/>
                 <br/>

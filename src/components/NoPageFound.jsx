@@ -5,7 +5,7 @@ function NoPageFound()
 return(
     <>
     <div className='container'> 
-        <h1 className="header">No page!</h1>
+        <h1 className="header">URL not found!</h1>
     </div>
     </>
 );
