@@ -8,9 +8,12 @@ return(
           <MainHeader /> 
           <Outlet /> {/* {/*To show child component(here pop-up dialog) in the same DOM 
                           placeholder to show root folder*/}
-  <Outlet />
+
     <main>
-      <PostsList />
+      <div className='container-List'>
+        <Outlet />
+        <PostsList />
+      </div>
     </main>
   </>
 )
