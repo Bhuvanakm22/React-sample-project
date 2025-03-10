@@ -21,16 +21,16 @@ const NavBar = () => {
       {location.pathname!=="/" && location.pathname!=="/login" && location.pathname!=="/register" && location.pathname!=="/logout" &&
       <>
         <li>
-          <a className='a-box' href="/todolist">ToDoList</a>
+          <a className={classes.abox} href="/todolist">ToDoList</a>
         </li> 
         <li>
-          <a className='a-box' href="/taskList">TaskList</a>
+          <a className={classes.abox} href="/taskList">TaskList</a>
         </li>
         <li>
-          <a className='a-box' href="/posts">PostList</a>
+          <a className={classes.abox} href="/posts">PostList</a>
         </li>
         <li>
-          <a className='a-box' href="/logout">Logout</a>
+          <a className={classes.abox} href="/logout">Logout</a>
         </li>
         </>
         }

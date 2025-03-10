@@ -4,7 +4,7 @@
     align-items: center;
     background-color: #fff;
     color: #333;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
   }
   
   .navbarLeft .logo {
@@ -19,20 +19,66 @@
     display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
+    /* background-color: black; */
   }
   
   .navbarCenter .navLinks li {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
+    display: grid;
+    gap: 2rem;
+    /* grid-template-columns: repeat(3, 30%); */
   }
   
-  .navbarCenter .navLinks a {
-    color: #333;
+  .abox {
+    color: #020a95;
     text-decoration: none;
+    padding: 1rem;
   }
   
+  .navbarCenter .navLinks li:hover{
+  background-color: #bfea15 !important;
+  color: #111;
+    }
+  .navbarCenter .navLinks li a:active
+  {
+    color: #111 !important;     
+  }
+  nav ul {
+    display: flex;
+    /* justify-content: center; */
+    list-style: none;
+    padding: 0;
+  }
+      
+      /* nav li {
+        margin: 0 10px;
+      } */
+      
+      nav abox {
+        text-decoration: none;
+        color: #020a95;
+        padding: 4px;
+        background: border-box;
+        box-sizing: border-box;
+        background-color: #99999f;
+        border-spacing: 20px;
+        border: 5px solid #fff;
+        border-radius: 1rem;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+      }
+          .navbarCenter .navLinks a :active{
+            color: #5189e3 !important;
+            background-color: aquamarine;
+      }
+      
   .navbarRight {
     display: flex;
     align-items: center;
+    width: 11%;
   }
   
   .navbarRight .cart-icon,
